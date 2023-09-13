@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fcf5e6;
+            /* Creamy background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6347;
+            /* Tomato red header */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #d2691e;
+            /* Chocolate brown navigation bar */
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #date-time {
+            font-size: 24px;
+            color: #8b4513;
+            /* Saddle brown text color */
+        }
+
+        .food-image {
+            max-width: 500px;
+            width: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Costa's Cookbook</h1>
+    </header>
+    <nav>
+        <a href="Costa'sCookbook.html">Home</a>
+        <a href="Recipes.html">Recipes</a>
+        <a href="AboutUs.html">About Us</a>
+    </nav>
+    <div class="container">
+        <div id="date-time">
+            <p>Current Date and Time:</p>
+            <span id="clock"></span>
+            <script>
+                function updateClock() {
+                    const currentDate = new Date();
+                    document.getElementById("clock").textContent = currentDate.toLocaleString();
+                }
+
+                // Update the clock every second
+                setInterval(updateClock, 1000);
+
+                // Initial update
+                updateClock();
+            </script>
+        </div>
+        <img class="food-image" src="Octopus Pasta.png" alt="Delicious Food 1">
+        <img class="food-image" src="Salmon Curry.png" alt="Delicious Food 2">
+        <img class="food-image" src="Sweet and Sour Chicken.png" alt="Delicious Food 3">
+        <a href="purchase.html">
+            <img src="CostasCookbook.png" alt="Recipe Book">
+            <a href="thankyoumessage.html" target="_blank" <img src="CostasCookbook.png" alt="Recipe Book" <p>Click to
+                Buy</p>
+            </a>
+        </a>
+    </div>
+</body>
+
+</html>

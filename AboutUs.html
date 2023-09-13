@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fcf5e6;
+            /* Creamy background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6347;
+            /* Tomato red header */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #d2691e;
+            /* Chocolate brown navigation bar */
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #date-time {
+            font-size: 24px;
+            color: #8b4513;
+            /* Saddle brown text color */
+        }
+
+        .author-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .author-info {
+            text-align: left;
+            padding: 20px;
+        }
+
+        .author-name {
+            font-size: 24px;
+            color: #ff6347;
+        }
+
+        .author-description {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .author-image {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .mission {
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <a href="Costa'sCookbook.html">Home</a>
+        <a href="Recipes.html">Recipes</a>
+        <a href="#">About Us</a>
+    </nav>
+    <div class="container">
+        <div id="date-time">
+            <p>Current Date and Time:</p>
+            <span id="clock"></span>
+            <script>
+                function updateClock() {
+                    const currentDate = new Date();
+                    document.getElementById("clock").textContent = currentDate.toLocaleString();
+                }
+
+                // Update the clock every second
+                setInterval(updateClock, 1000);
+
+                // Initial update
+                updateClock();
+            </script>
+        </div>
+        <div class="author-section">
+            <div class="author-info">
+                <div class="author-name">Andrea Costa</div>
+                <div class="author-description">Online Business School Student</div>
+                <div class="author-description">costa.andrea911@gmail.com</div>
+            </div>
+            <img class="author-image" src="Me.png" alt="Andrea Costa">
+            <div class="mission">
+                Our Mission is to provide you with easy and delicious recipes that can be cooked at home without any
+                fuss. Should you have any questions, feel free to reach out to us!
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

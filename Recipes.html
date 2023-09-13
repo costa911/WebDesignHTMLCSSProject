@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fcf5e6;
+            /* Creamy background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6347;
+            /* Tomato red header */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #d2691e;
+            /* Chocolate brown navigation bar */
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #date-time {
+            font-size: 24px;
+            color: #8b4513;
+            /* Saddle brown text color */
+        }
+
+        .food-image {
+            max-width: 200px;
+            /* Set the maximum width for the images */
+            width: 100%;
+            /* Ensure images don't overflow their containers */
+        }
+
+        .recipe-section {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .recipe-heading {
+            font-size: 20px;
+            color: #ff6347;
+            text-decoration: underline;
+        }
+
+        .recipe-content {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Recipes</h1>
+    </header>
+    <nav>
+        <a href="Costa'sCookbook.html">Home</a>
+        <a href="Recipes.html">Recipes</a>
+        <a href="AboutUs.html">About Us</a>
+    </nav>
+    <div class="container">
+        <div id="date-time">
+            <p>Current Date and Time:</p>
+            <span id="clock"></span>
+            <script>
+                function updateClock() {
+                    const currentDate = new Date();
+                    document.getElementById("clock").textContent = currentDate.toLocaleString();
+                }
+
+                // Update the clock every second
+                setInterval(updateClock, 1000);
+
+                // Initial update
+                updateClock();
+            </script>
+        </div>
+        <div class="recipe-section">
+            <img class="food-image" src="Octopus Pasta.png" alt="Delicious Food 1">
+            <div class="recipe-heading">Octopus Stew</div>
+            <div class="recipe-content">
+                <h2>Ingredients:</h2>
+                <ul>
+                    <li>Octopus: 1</li>
+                    <li>Your Favourite Pasta</li>
+                    <li>Tomato Passatta</li>
+                    <li>Olives as much as you like</li>
+                    <li>Walnuts as much as you like</li>
+                    <li>Cheese as much as you like</li>
+                    <li>Tomato Paste: 1 Spoon</li>
+                    <li>Red Wine: 500ml</li>
+                    <li>Onions: 2</li>
+                    <li>Garlic: 1</li>
+                    <li>Apple: 1</li>
+                    <!-- Add your ingredients here -->
+                </ul>
+                <h2>Method of Cooking:</h2>
+                <ol>
+                    <li>Step 1: Clean your Octopus and Boil for 1 hour and let rest in its own water until it goes cold
+                    </li>
+                    <li>Step 2: Chop your Onions, Garlic, Apple, Olives and Walnuts and Fry, Start with high heat then
+                        reduce to low heat</li>
+                    <li>Step 3: Add the Tomato Paste and stir, add the 500ml of Red wine and let it reduce</li>
+                    <li>Step 4: Add the Tomato Passatta stir until it boils, after gradually add Octopus Water</li>
+                    <li>Step 5: After an hour add the Octopus to the sauce for around 30mins and let sit on low heat
+                    </li>
+                    <li>Step 6: Cook your Pasta and when ready mix with the Octopus Stew, Grate as much cheese as
+                        possible and Enjoy!</li>
+                    <!-- Add your cooking method steps here -->
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-section">
+            <img class="food-image" src="Carbonara.png" alt="Delicious Food 2">
+            <div class="recipe-heading">Carbonara</div>
+            <div class="recipe-content">
+                <h2>Ingredients:</h2>
+                <ul>
+                    <li>Guanciale</li>
+                    <li>Your Favourite Pasta</li>
+                    <li>4 Eggs</li>
+                    <li>Pecorino Romano</li>
+                    <li>Black Pepper</li>
+                    <li>Olive Oil</li>
+                    <!-- Add your ingredients here -->
+                </ul>
+                <h2>Method of Cooking:</h2>
+                <ol>
+                    <li>Step 1: Chop your Guanciale in small dices</li>
+                    <li>Step 2: Toast Black Pepper on a low heat and move to a Pestel and Mortar and crush</li>
+                    <li>Step 3: Fry the Guanciale in the same pan, start with a height heat and reduced an let it cook
+                        until it gets Crispy</li>
+                    <li>Step 4: In a bowl, break 2 whole egg, and 2 egg yolks, Grate Pecorino Romano and add a drizzle
+                        of Olive oil and stir, you can add some water too make it a little runny.</li>
+                    <li>Step 5: Cook you pasta, hold onto some of the pasta water, throw the cooked pasta with the
+                        Guanciale toss a few times and add the Black pepper and toss again.
+                    </li>
+                    <li>Step 6: Remove the pan from the flame let sit until it's not piping hot and add the egg mixture
+                        and stir, don't let the egg get curdled, add more Pecorino Romano and Enjoy!
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
